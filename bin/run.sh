@@ -1,0 +1,1 @@
+docker run --rm -it --env-file ./.env -v "$PWD":/usr/src -w /usr/src accenture_task mvn -q
