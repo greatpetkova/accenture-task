@@ -87,7 +87,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 ### 6. Run Accenture tests from InteelliJ IDEA
 
-Navigate to Accenture_Test click with right mouse button and choose "Run 'Accenture_Test"
+Navigate to Accenture_Test click with right mouse button and choose "Run 'Accenture_Test'"
 
 ```bash
 Default Suite
