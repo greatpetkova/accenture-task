@@ -12,7 +12,7 @@ public class BrowserFactory {
 
 		switch (browser) {
 			case "firefox":
-				if (EnvirontmentHelper.isDockerEnv()) {
+				if (EnvironmentHelper.isDockerEnv()) {
 					FirefoxOptions options = new FirefoxOptions();
 
 					options.setHeadless(true);
@@ -25,7 +25,7 @@ public class BrowserFactory {
 				break;
 			case "chrome":
 			default:
-				if (EnvirontmentHelper.isDockerEnv()) {
+				if (EnvironmentHelper.isDockerEnv()) {
 					ChromeOptions options = new ChromeOptions();
 
 					options.setHeadless(true);
@@ -35,7 +35,6 @@ public class BrowserFactory {
 				} else {
 					driver = new ChromeDriver();
 				}
-				break;
 		}
 
 		return driver;

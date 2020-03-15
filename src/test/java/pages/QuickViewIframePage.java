@@ -34,8 +34,8 @@ public class QuickViewIframePage extends BasePage {
     }
 
     public void setQuantity(int quantity) {
-        this.quantityInput.clear();
-        this.quantityInput.sendKeys(Integer.toString(quantity));
+        quantityInput.clear();
+        quantityInput.sendKeys(Integer.toString(quantity));
     }
 
     public void selectSize(String size) {

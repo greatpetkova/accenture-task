@@ -10,12 +10,12 @@ import pages.HomePage;
 import pages.ListingPage;
 import pages.QuickViewIframePage;
 import utils.BrowserFactory;
-import utils.EnvirontmentHelper;
+import utils.EnvironmentHelper;
 
 import java.util.concurrent.TimeUnit;
 
 public class Accenture_Test {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeTest
     public void boot() {
@@ -23,7 +23,7 @@ public class Accenture_Test {
 
         driver.get("http://automationpractice.com/");
 
-        if (EnvirontmentHelper.isDockerEnv()) {
+        if (EnvironmentHelper.isDockerEnv()) {
             driver.manage().window().setSize(new Dimension(1920,1080)); //fake browser size for headless
         } else {
             driver.manage().window().maximize();
