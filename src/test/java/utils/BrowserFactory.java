@@ -12,7 +12,7 @@ public class BrowserFactory {
 
 		switch (browser) {
 			case "firefox":
-				if (System.getenv("RUN_ENV").equals("DOCKER")) {
+				if (EnvirontmentHelper.isDockerEnv()) {
 					FirefoxOptions options = new FirefoxOptions();
 
 					options.setHeadless(true);
